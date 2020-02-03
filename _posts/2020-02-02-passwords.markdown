@@ -50,7 +50,7 @@ Should live in a safe physical location, such as an actual vault.
 Features of your Password Manager
 1. Autofill
 I highly suggest to not use any autofill features used in password managers as there are working proofs of concepts that would exploit this feature to exfiltrate the credentials.
-https://www.cs.columbia.edu/~suman/docs/suman_pwdmgr.pdf
+[Password Managers: Attacks and Defenses](https://www.cs.columbia.edu/~suman/docs/suman_pwdmgr.pdf)
 
 2. Auditing Passwords
 
