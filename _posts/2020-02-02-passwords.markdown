@@ -2,28 +2,62 @@
 layout: post
 title:  "Passwords!"
 date:   2020-02-02 19:38:21 -0500
-categories: jekyll update
+categories: passwords
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+It is increasingly important to use a password manager.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Choosing a Password Manager
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Although this blog post is as of right now, it is important to never be dependant on any tool. As new information comes out about these password managers, such as new critical security vulnerabilities, we need to always be agile enough to drop them and switch to an alternative. Exporting your data from one manager and importing to another is generally very easy.
 
-Jekyll also offers powerful support for code snippets:
+Factors when choosing a password manager:
+security of the solution
+privacy stance of the publisher (including whether they are open source)
+ease of use with your devices
+price
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Major Competitors
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Recommendation
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+BitWarden
+BitWarden is open source, while LastPass is not.
+Security issues found in LastPass recently.
+Price differences
+
+
+
+Accessing your Password Vault
+
+Masterpassword
+Add MFA, supports:
+Authenticator apps. You don’t need to choose the Google Authenticator app even if a website appears to only allow that. Other alternatives include Authy, FreeOTP(I use this one)
+YubiKey OTP Security Key
+Duo
+FIDO U2F Security Key
+Email (I suggest not using email or SMS)
+
+Physical Tokens
+Currently using YubiKey:
+One that lives in my laptop(USB-C -> YubiKey 5C Nano)
+One that is on my keychain (USB-C -> YubiKey 5C)
+
+Recovery Code
+Essential incase all else fails.
+Should live in a safe physical location, such as an actual vault.
+
+Features of your Password Manager
+1. Autofill
+I highly suggest to not use any autofill features used in password managers as there are working proofs of concepts that would exploit this feature to exfiltrate the credentials.
+https://www.cs.columbia.edu/~suman/docs/suman_pwdmgr.pdf
+
+2. Auditing Passwords
+
+Exposed Passwords Report
+
+
+
+
+
+
