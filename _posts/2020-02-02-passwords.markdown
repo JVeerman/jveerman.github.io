@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Passwords!"
+title:  "Passwords Management for 2020"
 date:   2020-02-02 19:38:21 -0500
 categories: passwords
 ---
@@ -19,12 +19,17 @@ price
 
 Major Competitors
 
+| Name     | Security | Privacy | Ease of use | Price |
+| LastPass | Security issues found in LastPass recently.         |   LastPass is closed source.      |             |     LastPass has a free plan, which is good. For $3/month, you get 1GB encrypted file storage, secured sharing, Yubikey and Sesame 2FA support, and an ad-free vault.   |
+| BitWarden | BitWarden is open source, while LastPass is not. Allows for audits.        |   BitWarden is open source.      |             |    Bitwarden also has a free plan but with one additional feature. The ability to self-host it on your server. For $10 per year, you get 1GB encrypted file storage, sharing for two users, 2FA support for Yubikey, and advanced reports.   |
+
+
+
 Recommendation
 
 BitWarden
-BitWarden is open source, while LastPass is not.
-Security issues found in LastPass recently.
-Price differences
+
+
 
 
 
