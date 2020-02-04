@@ -5,9 +5,10 @@ date:   2020-02-02 19:38:21 -0500
 categories: passwords
 ---
 
-## Password Managers are Essential
+I consider a password manager a necessity nowadays.
 
-It is increasingly important to use a password manager.
+Among the benefits, include:
+
 
 ## Choosing a Password Manager
 
