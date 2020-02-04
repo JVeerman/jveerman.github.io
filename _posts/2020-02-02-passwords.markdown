@@ -1,19 +1,42 @@
 ---
 layout: post
-title:  "Passwords Management for 2020"
+title:  "Managing Your Passwords"
 date:   2020-02-02 19:38:21 -0500
 categories: passwords
 ---
 
-Benefits of a Password Manager
-I consider a password manager a necessity nowadays.
+A forum you used in 2012 has been compromised and has had all its users' data leaked. 
+Among that data was your regular username of JSmith44, your email jsmith44@gmail.com and your password hunter2.
+The data was sold to the highest bidder on the darkweb and purchaser(let's call him Mr X) is trying to see whether any of the users' credentials could be used for more important accounts, such as for banking.
+Lucky for Mr X(and unlucky for you), the password that you used for the forum is actually the same password for your gmail account. 
 
-Among the benefits, include:
-1. Security. Your passwords are stored encrypted in a way that only you have access to them.
-1. Simplification. You only need to remember one master password for your password manager. 
-2. Easy to Generate New Passwords. Ability to quickly generate new secure passwords with the click of a button.
-3. Easy To Login. Logins to accounts easily with browser extensions
-4. Auditing Capabilities. You can run reports to see the strength of your passwords and whether any of them are at risk of being compromised.
+What would Mr X be able to do if they had your gmail account? How could this have been prevented? How can you protect yourself now?
+
+## Password Best Practises
+
+If the password for the forum were unique and only used for that forum, then the credentials would not have worked for your gmail. It is difficult to have a unique and complex password for every account you have, but it is very easy to accomplish with a password manager.
+A password manager will help you generate a very complex passwords and save them for you to access on any of your devices. 
+
+If the password you used for the forum were actually used for your gmail, having had setup multi-factor authentication on your gmail account would have stopped Mr X from logging in. Multi-factor authentication is when authentication requires two or more pieces of evidence. Typically this is a password but if you add a physical or digital token(like an RSA token or a Google Authenticator code) to your account as required to login, then Mr X would not be able to login with just a password.
+
+  * Use complex and unique passwords
+  * Use a trusted and secure password manager
+  * Use multi-factor authentication
+
+## Benefits of a Password Manager
+
+1. Security. 
+  * Your passwords are stored encrypted in a way that only you have access to them.
+1. Less to Memorize and Never Forget. 
+  * You only need to remember one master password for your password manager. You will also never have to use Forgot Password again!
+2. Use Complex and Unique Passwords.
+  * Allows you to adhere to password best practises. It is virtually impossible to have a unique 14 digit alphanumeric string for every account you have without a password manager.
+2. Easy Password Creation.
+  * Ability to quickly generate new secure passwords with the click of a button. 
+3. Seamlessly Login. 
+  * Logging in can actually be less clicks with a password manager.
+4. Auditing Capabilities. 
+  * You can run reports to see the strength of your passwords and whether any of them are at risk of being compromised.
 
 
 ## Choosing a Password Manager
@@ -25,6 +48,7 @@ For my purposes, I wanted a password manager that met the following:
 2. Securely stores my passwords
 2. Mobile and Desktop support
 2. Browser extension for my browsers(Brave and FireFox)
+2. Allows for use of physical tokens for multi-factor authentication
 3. Open source preferred
 4. Reasonably priced
 
