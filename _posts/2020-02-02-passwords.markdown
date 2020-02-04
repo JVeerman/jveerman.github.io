@@ -9,7 +9,7 @@ categories: passwords
 
 It is increasingly important to use a password manager.
 
-# Choosing a Password Manager
+## Choosing a Password Manager
 
 Although this blog post is as of right now, it is important to never be dependant on any tool. As new information comes out about these password managers, such as new critical security vulnerabilities, we need to always be agile enough to drop them and switch to an alternative. Exporting your data from one manager and importing to another is generally very easy.
 
@@ -21,13 +21,13 @@ For my purposes, I wanted a password manager that met the following:
 3. Open source preferred
 4. Reasonably priced
 
-## Major Competitors
+### Major Competitors
 
 | Name     | Security Vulnerability History | Mobile and Desktop Support? | Browser extension support? | Open Source? | Price |
 | LastPass | 2 High, 1 Medium        [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=lastpass&search_type=all)       | Yes                         | Yes                        | No           | LastPass has a free plan, which is good. For $3/month, you get 1GB encrypted file storage, secured sharing, Yubikey and Sesame 2FA support, and an ad-free vault.   |
 | BitWarden | 1 High              [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=bitwarden&search_type=all)          | Yes                         | Yes                        | Yes          | Bitwarden also has a free plan but with one additional feature. The ability to self-host it on your server. For $10 per year, you get 1GB encrypted file storage, sharing for two users, 2FA support for Yubikey, and advanced reports.   |
 
-## Security Vulnerability History
+#### Security Vulnerability History
 
 As mentioned above, there were vulnerabilities found in all the tools.
 
@@ -36,7 +36,7 @@ As mentioned above, there were vulnerabilities found in all the tools.
 
 
 
-## Recommendation
+##### Recommendation
 
 BitWarden
 
@@ -44,9 +44,9 @@ BitWarden
 
 
 
-# Accessing your Password Vault
+####### Accessing your Password Vault
 
-## Masterpassword
+######## Masterpassword
 Add MFA, supports:
 Authenticator apps. You don’t need to choose the Google Authenticator app even if a website appears to only allow that. Other alternatives include Authy, FreeOTP(I use this one)
 YubiKey OTP Security Key
