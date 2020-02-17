@@ -66,16 +66,16 @@ I have used both LastPass and Bitwarden extensively over several months and I ha
 
 ### Masterpassword
 Add MFA, supports:
-Authenticator apps. You don’t need to choose the Google Authenticator app even if a website appears to only allow that. Other alternatives include Authy, FreeOTP(I use this one)
-YubiKey OTP Security Key
-Duo
-FIDO U2F Security Key
-Email (I suggest not using email or SMS)
+* Authenticator apps. You don’t need to choose the Google Authenticator app even if a website appears to only allow that. Other alternatives include Authy, FreeOTP(I use this one)
+* YubiKey OTP Security Key
+* Duo
+* FIDO U2F Security Key
+* Email (I suggest not using email or SMS)
 
 ### Physical Tokens
 Currently using YubiKey:
-One that lives in my laptop(USB-C -> YubiKey 5C Nano)
-One that is on my keychain (USB-C -> YubiKey 5C)
+* One that lives in my laptop(USB-C -> YubiKey 5C Nano)
+* One that is on my keychain (USB-C -> YubiKey 5C)
 
 ### Recovery Code
 Essential incase all else fails.
@@ -89,38 +89,37 @@ I highly suggest to not use any autofill features used in password managers as t
 
 ## Audit your Passwords
 
-### Detection of Insecure Passwords
-1. Reused Passwords Report
+Most password managers have the feature to audit your passwords for best practises, such as whether the password is complex enough or if the website was compromised.
 
-If a service that you use is compromised, reusing the same password elsewhere can allow hackers to easily gain access to more of your online accounts. You should use a unique password for every account or service.
+### Detection of Insecure Passwords
+
+Run the following reports on your password manager and fix any issues found.
+
+1. Reused Passwords Report
+* If a service that you use is compromised, reusing the same password elsewhere can allow hackers to easily gain access to more of your online accounts. You should use a unique password for every account or service.
 
 2. Weak Passwords Report
-
-Weak passwords can easily be guessed by hackers and automated tools that are used to crack passwords. The Bitwarden password generator can help you create strong passwords.
+* Weak passwords can easily be guessed by hackers and automated tools that are used to crack passwords. The Bitwarden password generator can help you create strong passwords.
 
 3. Unsecured Websites Report
-
-Using unsecured websites with the http:// scheme can be dangerous. If the website allows, you should always access it using the https:// scheme so that your connection is encrypted.
+* Using unsecured websites with the http:// scheme can be dangerous. If the website allows, you should always access it using the https:// scheme so that your connection is encrypted.
 
 4. Inactive 2FA Report
-
-Two-factor authentication (2FA) is an important security setting that helps secure your accounts. If the website offers it, you should always enable two-factor authentication.
+* Two-factor authentication (2FA) is an important security setting that helps secure your accounts. If the website offers it, you should always enable two-factor authentication.
 
 
 ### Detection of Compromised Accounts 
-1. Exposed Passwords Report
 
-Exposed passwords are passwords that have been uncovered in known data breaches that were released publicly or sold on the dark web by hackers.
+
+1. Exposed Passwords Report
+* Exposed passwords are passwords that have been uncovered in known data breaches that were released publicly or sold on the dark web by hackers.
 
 2. Data Breach Report
-
-A "breach" is an incident where a site's data has been illegally accessed by hackers and then released publicly. Review the types of data that were compromised (email addresses, passwords, credit cards etc.) and take appropriate action, such as changing passwords.
+* A "breach" is an incident where a site's data has been illegally accessed by hackers and then released publicly. Review the types of data that were compromised (email addresses, passwords, credit cards etc.) and take appropriate action, such as changing passwords.
 
 3. Financial Statements
-
-Although not part of the password manager, I suggest checking your financial statements regularly(or better yet, enable notifications for every purchase). The credit card companies do their best to detect fraud, however if the fraudulent purchase might fit the characteristics of a legitimate purchase and not be considered a fraudulent purchase at first. This might happen, for instance, if your inactive Netflix account were compromised and the malicious person reactivated the account for the premium service.
-
-By validating all your purchases, any instances of a compromised account with your saved payment details will be caught early and prevent any losses. 
+* Although not part of the password manager, I suggest checking your financial statements regularly(or better yet, enable notifications for every purchase). The credit card companies do their best to detect fraud, however if the fraudulent purchase might fit the characteristics of a legitimate purchase and not be considered a fraudulent purchase at first. This might happen, for instance, if your inactive Netflix account were compromised and the malicious person reactivated the account for the premium service.
+* By validating all your purchases, any instances of a compromised account with your saved payment details will be caught early and prevent any losses. 
 
 ### Final Words
 
