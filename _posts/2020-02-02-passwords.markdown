@@ -62,20 +62,19 @@ For my purposes, I wanted a password manager that met the following:
 
 I have used both LastPass and Bitwarden extensively over several months and I have chosen BitWarden. I prefer every aspect of BitWarden over LastPass and the fact that BitWarden is open source gives me some assurance that it isn't doing anything unexpected such as sending my credentials to a 3rd party.
 
-## Accessing your Password Vault
+## Accessing your Password Manager
 
-### Masterpassword
-Add MFA, supports:
+### Enabling Multi-Factor Authentication
+
+Password managers are typically accessed with a username and password. For added assurance that only you can access your password manager, I suggest enabling multi-factor authentication.
+
+Most password managers support:
 * Authenticator apps. You don’t need to choose the Google Authenticator app even if a website appears to only allow that. Other alternatives include Authy, FreeOTP(I use this one)
 * YubiKey OTP Security Key
 * Duo
 * FIDO U2F Security Key
-* Email (I suggest not using email or SMS)
-
-### Physical Tokens
-Currently using YubiKey:
-* One that lives in my laptop(USB-C -> YubiKey 5C Nano)
-* One that is on my keychain (USB-C -> YubiKey 5C)
+* Email 
+* SMS - I suggest not using this as a MFA method because phone numbers can be compromised more easily than the other MFA methods.
 
 ### Recovery Code
 Essential incase all else fails.
@@ -87,11 +86,11 @@ I highly suggest to not use any autofill features used in password managers as t
 [Password Managers: Attacks and Defenses](https://www.cs.columbia.edu/~suman/docs/suman_pwdmgr.pdf)
 
 
-## Audit your Passwords
+## Auditing Passwords
 
 Most password managers have the feature to audit your passwords for best practises, such as whether the password is complex enough or if the website was compromised.
 
-### Detection of Insecure Passwords
+### Detecting Insecure Passwords
 
 Run the following reports on your password manager and fix any issues found.
 
@@ -108,8 +107,9 @@ Run the following reports on your password manager and fix any issues found.
 * Two-factor authentication (2FA) is an important security setting that helps secure your accounts. If the website offers it, you should always enable two-factor authentication.
 
 
-### Detection of Compromised Accounts 
+### Detecting Compromised Accounts 
 
+Certain password managers have the ability to run a report on which accounts of yours have been breached.
 
 1. Exposed Passwords Report
 * Exposed passwords are passwords that have been uncovered in known data breaches that were released publicly or sold on the dark web by hackers.
