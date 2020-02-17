@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Managing Your Passwords"
-date:   2020-02-02 19:38:21 -0500
+date:   2020-02-16 19:54:21 -0500
 categories: passwords
 ---
 
@@ -10,7 +10,7 @@ Among that data was your regular username of JSmith44, your email jsmith44@gmail
 The data was sold to the highest bidder on the darkweb and purchaser(let's call him Mr X) is trying to see whether any of the users' credentials could be used for more important accounts, such as for banking.
 Lucky for Mr X(and unlucky for you), the password that you used for the forum is actually the same password for your gmail account. 
 
-What would Mr X be able to do if they had your gmail account? How could this have been prevented? How can you protect yourself now? What if in this scenario it was only your Netflix account sharing a password instead of your gmail account?
+What would Mr X be able to do if they had your gmail account? How could this have been prevented? How can you protect yourself now?
 
 ## Password Best Practises
 
@@ -58,7 +58,7 @@ For my purposes, I wanted a password manager that met the following:
 | LastPass | 2 High, 1 Medium        [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=lastpass&search_type=all)       | Yes                         | Yes                        | No           | LastPass has a free plan, which is good. For $3/month, you get 1GB encrypted file storage, secured sharing, Yubikey and Sesame 2FA support, and an ad-free vault.   |
 | BitWarden | 1 High              [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=bitwarden&search_type=all)          | Yes                         | Yes                        | Yes          | Bitwarden also has a free plan but with one additional feature. The ability to self-host it on your server. For $10 per year, you get 1GB encrypted file storage, sharing for two users, 2FA support for Yubikey, and advanced reports.   |
 
-### Recommendation
+### Password Manager Recommendation
 
 I have used both LastPass and Bitwarden extensively over several months and I have chosen BitWarden. I prefer every aspect of BitWarden over LastPass and the fact that BitWarden is open source gives me some assurance that it isn't doing anything unexpected such as sending my credentials to a 3rd party.
 
@@ -66,19 +66,19 @@ I have used both LastPass and Bitwarden extensively over several months and I ha
 
 ### Enabling Multi-Factor Authentication
 
-Password managers are typically accessed with a username and password. For added assurance that only you can access your password manager, I suggest enabling multi-factor authentication.
+Password managers are typically accessed with a username and password. For added assurance that only you can access your password manager, I suggest enabling multi-factor authentication for atleast two other factors. For example, I use a physical token and an authenticator app.
 
 Most password managers support:
 * Authenticator apps. You don’t need to choose the Google Authenticator app even if a website appears to only allow that. Other alternatives include Authy, FreeOTP(I use this one)
-* YubiKey OTP Security Key
-* Duo
-* FIDO U2F Security Key
+* Physical token
 * Email 
-* SMS - I suggest not using this as a MFA method because phone numbers can be compromised more easily than the other MFA methods.
+
+Note, I do not recommend SMS for MFA because phone numbers can be compromised more easily than the other MFA methods. The most prominent vulnerability with SMS is that of a "SIM Swap" attack in which a phone number is ported to a new service provider by a fraudster. 
+[Wikipedia - SIM Swap Scam](https://en.wikipedia.org/wiki/SIM_swap_scam)
+[So Hey You Should Stop Using Texts for Two-Factor Authentication](https://www.wired.com/2016/06/hey-stop-using-texts-two-factor-authentication/)
 
 ### Recovery Code
-Essential incase all else fails.
-Should live in a safe physical location, such as an actual vault.
+If your MFA does not work, such as if you were using an authenticator app on your phone and you lost your phone, then you can use your password managers recovery code to regain access to your account. it is essential that you write down your recovery codes and  keep them stored in a safe physical location, such as a physical vault.
 
 ### Autofill Feature - Not Recommended
 
@@ -109,9 +109,9 @@ Run the following reports on your password manager and fix any issues found.
 
 ### Detecting Compromised Accounts 
 
-Certain password managers have the ability to run a report on which accounts of yours have been breached.
+Certain password managers have the ability to run a report on which accounts of yours have been breached. I suggest running the following reports on your password manager:
 
-1. Exposed Passwords Report
+1. Exposed Passwords Report 
 * Exposed passwords are passwords that have been uncovered in known data breaches that were released publicly or sold on the dark web by hackers.
 
 2. Data Breach Report
