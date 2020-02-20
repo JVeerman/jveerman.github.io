@@ -45,16 +45,13 @@ It is important to never be overly dependant on any tool to the point that it is
 
 In my opinion password managers in this day and age must be able to achieve the following:
 1. Securely store passwords
-* Confidentiality: Only you should be able to see your saved passwords. Your password manager should use robust end-to-end encryption such that noone, not even the password manager service, should be able to read your password.
-* Authentication/Authorization: Secure access
+* Only you should be able to see your saved passwords. Your password manager should use robust end-to-end encryption such that noone, not even the password manager service, should be able to read your password.
 2. Cloud based 
 3. Mobile and Desktop support
 3. Browser extension support
 4. Actively developed
 * Certain browsers such as Google Chrome and FireFox have built-in password management capabilities, however they are not robust in features or actively developed as there are many competing priorities.
 5. Independently audited
-
-
 
 For my purposes, I also wanted some additional features:
 
@@ -66,6 +63,8 @@ For my purposes, I also wanted some additional features:
 
 ### Major Competitors
 
+To address the comparison of features, I populated the following table:
+
 | Password Manager     | Features List                                                      | Cloud Based | Actively Developed | Independently Audited   |  Mobile and Desktop Support        | Browser Integration      | Open Source  | Free Plan Option | Physical Token MFA | Dark-Mode | Linux Support | Monthly Price (USD) | Google Play # of Downloads | Google Play Rating |                                                                                                                                                                                                                                      |
 | LastPass             | https://www.lastpass.com/enterprise/enterprise-features            | Yes         | Yes                | No                      | Yes                                | Yes                      | No           | Yes              | Yes                | No        | Yes           | $3                  | 5M+                        | 4.3 / 5            | 
 | BitWarden            | https://bitwarden.com/                                             | Yes         | Yes                | No                      | Yes                                | Yes                      | Yes          | Yes              | Yes                | Yes       | Yes           | $0.83               | 500K+                      | 4.6 / 5            | 
@@ -76,15 +75,15 @@ For my purposes, I also wanted some additional features:
 
 ### Security Vulnerability History
 
-The following is the history of reported vulnerabilities in the cloud-based password managers. 
+To address how well these products securely store passwords, I compared the vulnerabiltiies reported through the National Vulnerability Database (NVD):
 
-| Password Manager     | Vulnerabilities Reported           |  Details                                                   |
+| Password Manager     | Vulnerabilities Reported           |  Detail Information                                                  |
 | LastPass             | 2 High, 2 Medium                   | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=lastpass&search_type=all) |
 | BitWarden            |                                    | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=bitwarden&search_type=all) |
 | 1Password            | 4 Medium                           | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=1password&search_type=all) |
 | Dashlane             | 1 High                             | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=dashlane&search_type=all) |
 | KeePass              | 1 Critical(*), 4 High, 2 Medium    | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=keepass&search_type=all) |
-| Keeper               | N/A                                |                         |                                                    
+| Keeper               | N/A                                | N/A                        |                                                    
 
 Note(*): Part of an unofficial contribution for using on Android
 
