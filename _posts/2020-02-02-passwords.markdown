@@ -43,20 +43,50 @@ If the password you used for the forum were actually used for your gmail, having
 
 It is important to never be overly dependant on any tool to the point that it is irreplaceable. As new information comes out about these password managers, such as new critical security vulnerabilities, we need to always be agile enough to drop them and switch to an alternative. Exporting your data from one manager and importing to another is generally very easy.
 
-For my purposes, I wanted a password manager that met the following:
-1. Cloud-based
-2. Securely stores my passwords
-2. Mobile and Desktop support
-2. Browser extension for my browsers(Brave and FireFox)
+In my opinion password managers in this day and age must be able to achieve the following:
+1. Securely store passwords
+* Confidentiality: Only you should be able to see your saved passwords. Your password manager should use robust end-to-end encryption such that noone, not even the password manager service, should be able to read your password.
+* Authentication/Authorization: Secure access
+2. Cloud based 
+3. Mobile and Desktop support
+3. Browser extension support
+4. Actively developed
+* Certain browsers such as Google Chrome and FireFox have built-in password management capabilities, however they are not robust in features or actively developed as there are many competing priorities.
+5. Independently audited
+
+
+
+For my purposes, I also wanted some additional features:
+
 2. Allows for use of physical tokens for multi-factor authentication
 3. Open source preferred
 4. Reasonably priced
+4. Dark  mode
+* It is very minor, but I had to note it! 
 
 ### Major Competitors
 
-| Name     | Security Vulnerability History | Mobile and Desktop Support? | Browser extension support? | Open Source? | Price |
-| LastPass | 2 High, 1 Medium        [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=lastpass&search_type=all)       | Yes                         | Yes                        | No           | LastPass has a free plan, which is good. For $3/month, you get 1GB encrypted file storage, secured sharing, Yubikey and Sesame 2FA support, and an ad-free vault.   |
-| BitWarden | 1 High              [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=bitwarden&search_type=all)          | Yes                         | Yes                        | Yes          | Bitwarden also has a free plan but with one additional feature. The ability to self-host it on your server. For $10 per year, you get 1GB encrypted file storage, sharing for two users, 2FA support for Yubikey, and advanced reports.   |
+| Password Manager     | Features List                                                      | Cloud Based | Actively Developed | Independently Audited   |  Mobile and Desktop Support        | Browser Integration      | Open Source  | Free Plan Option | Physical Token MFA | Dark-Mode | Linux Support | Monthly Price (USD) | Google Play # of Downloads | Google Play Rating |                                                                                                                                                                                                                                      |
+| LastPass             | https://www.lastpass.com/enterprise/enterprise-features            | Yes         | Yes                | No                      | Yes                                | Yes                      | No           | Yes              | Yes                | No        | Yes           | $3                  | 5M+                        | 4.3 / 5            | 
+| BitWarden            | https://bitwarden.com/                                             | Yes         | Yes                | No                      | Yes                                | Yes                      | Yes          | Yes              | Yes                | Yes       | Yes           | $0.83               | 500K+                      | 4.6 / 5            | 
+| 1Password            | https://1password.com/sign-up/                                     | Yes         | Yes                | No                      | Yes                                | Yes                      | No           | Yes              | Yes                | No        | Yes           | $3                  | 1M+                        | 4.2 / 5            | 
+| Dashlane             | https://www.dashlane.com/business/features                         | Yes         | Yes                | No                      | Yes                                | Yes                      | No           | Yes              | Yes                | Yes       | Yes           | $3.33               | 1M+                        | 4.6 / 5            | 
+| KeePass              | https://keepass.info/features.html                                 | No          | Yes                | No                      | Yes, through 3rd parties           | Yes, through 3rd parties | Yes          | Yes              | Yes                | No        | Yes           | Free                | 1M+                        | 4.6 / 5            | 
+| Keeper               | https://www.keepersecurity.com/personal.html                       | Yes         | Yes                | No                      | Yes                                | Yes                      | No           | No               | Yes                | Yes       | Yes           | $2.49               | 10M+                       | 4.6 / 5            | 
+
+### Security Vulnerability History
+
+The following is the history of reported vulnerabilities in the cloud-based password managers. 
+
+| Password Manager     | Vulnerabilities Reported           |  Details                                                   |
+| LastPass             | 2 High, 2 Medium                   | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=lastpass&search_type=all) |
+| BitWarden            |                                    | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=bitwarden&search_type=all) |
+| 1Password            | 4 Medium                           | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=1password&search_type=all) |
+| Dashlane             | 1 High                             | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=dashlane&search_type=all) |
+| KeePass              | 1 Critical(*), 4 High, 2 Medium    | [Details](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&query=keepass&search_type=all) |
+| Keeper               | N/A                                |                         |                                                    
+
+Note(*): Part of an unofficial contribution for using on Android
 
 ### Password Manager Recommendation
 
@@ -80,13 +110,7 @@ Note, I do not recommend SMS for MFA because phone numbers can be compromised mo
 ### Recovery Code
 If your MFA does not work, such as if you were using an authenticator app on your phone and you lost your phone, then you can use your password managers recovery code to regain access to your account. it is essential that you write down your recovery codes and  keep them stored in a safe physical location, such as a physical vault.
 
-### Autofill Feature - Not Recommended
-
-I highly suggest to not use any autofill features used in password managers as there are working proofs of concepts that would exploit this feature to exfiltrate the credentials.
-[Password Managers: Attacks and Defenses](https://www.cs.columbia.edu/~suman/docs/suman_pwdmgr.pdf)
-
-
-## Auditing Passwords
+## Important Password Manager Features
 
 Most password managers have the feature to audit your passwords for best practises, such as whether the password is complex enough or if the website was compromised.
 
@@ -120,6 +144,12 @@ Certain password managers have the ability to run a report on which accounts of 
 3. Financial Statements
 * Although not part of the password manager, I suggest checking your financial statements regularly(or better yet, enable notifications for every purchase). The credit card companies do their best to detect fraud, however if the fraudulent purchase might fit the characteristics of a legitimate purchase and not be considered a fraudulent purchase at first. This might happen, for instance, if your inactive Netflix account were compromised and the malicious person reactivated the account for the premium service.
 * By validating all your purchases, any instances of a compromised account with your saved payment details will be caught early and prevent any losses. 
+
+
+### Auto-Fill Capabilities
+I highly suggest to NOT use any autofill features used in password managers as there are working proofs of concepts that would exploit this feature to exfiltrate the credentials.
+[Password Managers: Attacks and Defenses](https://www.cs.columbia.edu/~suman/docs/suman_pwdmgr.pdf)
+
 
 ### Final Words
 
