@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Managing Your Passwords"
-date:   2020-02-16 19:54:21 -0500
+date:   2020-02-19 19:54:21 -0500
 categories: passwords
 ---
 
